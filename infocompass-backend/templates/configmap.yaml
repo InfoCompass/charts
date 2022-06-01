@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "infocompass-backend.fullname" . }}
+  labels:
+    app: {{ template "infocompass-backend.fullname" . }}
+data:
+  config.json: |
+    {
+          "title":                        "--title",
+          "translationSpreadsheetUrl":    "--translationSpreadsheetUrl",
+          "googleTranslateApiKey":        "--googleTranslateApiKey",
+          "deepLApiKey":                  "--deepLApiKey",
+          "frontendUrl":                  "--frontendUrl",
+          "port":                         "80",
+          "mail": {
+                  "host":         "--mail-host",
+                  "port":         "--mail-port",
+                  "secure":       true,
+                  "user":         "--mail-user",
+                  "pass":         "--mail-pass",
+                  "from":         "--mail-from"
+          },
+
+          "db": {
+                  "host":         {{ .Values.mongodb.host | quote }},
+                  "port":          {{ .Values.mongodb.port | quote }},
+                  "name":          {{ .Values.mongodb.db | quote }},
+                  "credentials": {
+                          "username":  {{ .Values.mongodb.username | quote }},
+                          "password":  {{ .Values.mongodb.password | quote }}
+                  }
+          },
+          "publicApi":{
+                  "port": {{ .Values.service.apiPort | quote }}
+          },
+          "adminMail": "--adminMail",
+          "voiceReader":{
+                  "properties":   [ "title", "brief", "description"],
+                  "baseUrl":      "--voiceReader-baseUrl",
+                  "customerId":   "--voiceReader-customerId"
+          },
+          "suggestions":{
+                  "apiKey": "--suggestion-apiKey",
+                  "requireMail": true,
+                  "requireApiKey": "new",
+                  "requireName": true,
+                  "sendConfirmation": true
+          }
+
+    }  
