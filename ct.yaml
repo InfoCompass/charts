@@ -4,5 +4,5 @@ target-branch: main
 chart-dirs:
   - infocompass
 chart-repos:
-  - infcompass=https://infocompass.github.io/charts
+  - infocompass=https://infocompass.github.io/charts
 helm-extra-args: --timeout 600s
