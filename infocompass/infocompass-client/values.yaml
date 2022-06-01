@@ -4,8 +4,7 @@
 
 replicaCount: 1
 
-backendLocation: https://api.info-compass.net #https://infocompass-backend.default.svc.cluster.local
-
+backendLocation: https://api.info-compass.net
 
 image:
   repository: infocompassde/infocompass-client
