@@ -1,0 +1,9 @@
+# See https://github.com/helm/chart-testing#configuration
+remote: origin
+target-branch: main
+validate-maintainers: false
+chart-dirs:
+  - infocompass
+chart-repos:
+  - infocompass=https://infocompass.github.io/charts
+helm-extra-args: --timeout 600s
