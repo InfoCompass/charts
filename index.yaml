@@ -1,14 +1,3 @@
 apiVersion: v1
-entries:
-  infocompass-backend:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2022-06-01T20:08:03.223831025+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 921dc567b6898709dc6e11a0f7959b2b86a9231b9f857d719afac2b91e479002
-    name: infocompass-backend
-    type: application
-    urls:
-    - https://infocompass.github.io/charts/infocompass-backend-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-06-01T20:08:03.223202852+02:00"
+entries: {}
+generated: "2022-06-08T09:35:45.996626441+02:00"
