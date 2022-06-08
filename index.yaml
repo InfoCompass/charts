@@ -1,3 +1,31 @@
 apiVersion: v1
-entries: {}
-generated: "2022-06-08T09:35:45.996626441+02:00"
+entries:
+  infocompass-backend:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-08T07:44:07.588916047Z"
+    description: A Helm chart for Kubernetes
+    digest: ec80ad4589e977f2331fd06b290dd7b03d76727cd013366693de61d3cffda1f5
+    maintainers:
+    - email: kontakt@info-compass.net
+      name: infoCompass team
+    name: infocompass-backend
+    type: application
+    urls:
+    - https://github.com/InfoCompass/charts/releases/download/infocompass-backend-0.1.0/infocompass-backend-0.1.0.tgz
+    version: 0.1.0
+  infocompass-client:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-06-08T07:44:07.750987767Z"
+    description: A Helm chart for infocompass-client
+    digest: 26904de4669566fdce3fede4f93f5b66656c0e6413203bb9d878f6b074eedb03
+    maintainers:
+    - email: kontakt@info-compass.net
+      name: infoCompass team
+    name: infocompass-client
+    type: application
+    urls:
+    - https://github.com/InfoCompass/charts/releases/download/infocompass-client-0.1.0/infocompass-client-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-08T07:44:07.750992367Z"
